@@ -1,0 +1,12 @@
+requests
+beautifulsoup4
+selenium
+playwright
+openai
+anthropic
+pyyaml
+loguru
+pandas
+python-dotenv
+fake-useragent
+lxml

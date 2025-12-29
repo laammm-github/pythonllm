@@ -1,0 +1,89 @@
+# 智能招聘信息聚合与分析系统配置
+
+# LLM配置
+llm:
+  # 可选: gpt, doubao, qwen, deepseek, hunyuan
+  provider: "qwen"
+  # 千问模型配置
+  model: "qwen-turbo"
+  temperature: 0.1
+  max_tokens: 2000
+  # 以下是其他模型的配置，当前使用千问模型，所以注释掉
+  # GPT模型配置
+  # model: "gpt-3.5-turbo"
+  # temperature: 0.1
+  # max_tokens: 2000
+  # 豆包模型配置
+  # model: "ERNIE-Bot-4"
+  # temperature: 0.1
+  # max_tokens: 2000
+  # DeepSeek模型配置
+  # model: "deepseek-chat"
+  # temperature: 0.1
+  # max_tokens: 2000
+  # 混元模型配置
+  # model: "hunyuan-pro"
+  # temperature: 0.1
+  # max_tokens: 2000
+  # API密钥会从.env文件加载，这里可以不配置
+  # api_key: "your_api_key_here"
+
+# 网页爬虫配置
+crawler:
+  # 可选: selenium, playwright, requests
+  driver: "selenium"
+  timeout: 30
+  retry_times: 3
+  retry_delay: 5
+  # 浏览器配置（仅Selenium/Playwright使用）
+  browser:
+    headless: true
+    user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+
+# 招聘网站解析规则
+websites:
+  lagou:
+    name: "拉勾网"
+    base_url: "https://www.lagou.com"
+    selectors:
+      job_list: ".job_list"
+      job_item: ".job_item"
+      title: ".job_title"
+      company: ".company_name"
+      salary: ".salary"
+      location: ".location"
+      requirements: ".requirements"
+  zhaopin:
+    name: "智联招聘"
+    base_url: "https://www.zhaopin.com"
+    selectors:
+      job_list: ".joblist"
+      job_item: ".joblist-box"
+      title: ".job-title"
+      company: ".company-name"
+      salary: ".salary"
+      location: ".job-address"
+      requirements: ".job-requirement"
+
+# 输出配置
+output:
+  format: "json"  # 可选: json, markdown, csv
+  directory: "data/output"
+  encoding: "utf-8"
+
+# 日志配置
+logging:
+  level: "INFO"
+  file: "logs/recruitment_analyzer.log"
+  rotation: "1 week"
+  retention: "1 month"
+
+# 招聘信息分析配置
+analysis:
+  # 是否启用分析功能
+  enabled: true
+  # 报告配置
+  report:
+    format: "markdown"  # 可选: markdown
+    title: "招聘信息分析报告"
+    output_dir: "data/output"
