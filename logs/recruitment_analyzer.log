@@ -10,3 +10,303 @@
 2025-12-29 17:30:02 | INFO     | recruitment_analyzer:analyze:99 - 招聘信息分析完成
 2025-12-29 17:30:02 | INFO     | recruitment_analyzer:_save_analysis_report:154 - 分析报告已保存到: data/output\recruitment_info_20251229_165540_417_analysis_20251229_173002_506.md
 2025-12-29 17:30:02 | SUCCESS  | main:main:151 - 分析完成！分析报告已保存至: data/output\recruitment_info_20251229_165540_417_analysis_20251229_173002_506.md
+2025-12-29 17:51:59 | INFO     | logger:configure:52 - 日志配置完成，日志文件: logs/recruitment_analyzer.log
+2025-12-29 17:51:59 | INFO     | config_loader:update:192 - 更新配置: output.format = json
+2025-12-29 17:51:59 | INFO     | config_loader:update:192 - 更新配置: output.directory = data/output
+2025-12-29 17:51:59 | INFO     | crawler_factory:create_crawler:29 - 创建Selenium爬虫实例
+2025-12-29 17:51:59 | INFO     | selenium_crawler:__init__:33 - 启用无头模式
+2025-12-29 17:52:00 | ERROR    | selenium_crawler:__init__:74 - Selenium WebDriver初始化失败: Could not reach host. Are you offline?
+2025-12-29 17:52:00 | ERROR    | main:main:205 - 程序执行失败: Could not reach host. Are you offline?
+2025-12-29 17:52:18 | INFO     | logger:configure:52 - 日志配置完成，日志文件: logs/recruitment_analyzer.log
+2025-12-29 17:52:18 | INFO     | config_loader:update:192 - 更新配置: output.format = json
+2025-12-29 17:52:18 | INFO     | config_loader:update:192 - 更新配置: output.directory = data/output
+2025-12-29 17:52:18 | INFO     | crawler_factory:create_crawler:26 - 创建Requests爬虫实例
+2025-12-29 17:52:18 | INFO     | llm_factory:create_client:41 - 创建千问客户端实例
+2025-12-29 17:52:18 | INFO     | base_llm:__init__:28 - 初始化QwenClient客户端，模型: qwen-turbo
+2025-12-29 17:52:18 | INFO     | qwen_client:__init__:57 - 千问客户端已初始化，模型: qwen-turbo
+2025-12-29 17:52:18 | INFO     | base_processor:__init__:22 - 初始化RecruitmentProcessor处理器
+2025-12-29 17:52:18 | INFO     | main:load_urls_from_file:115 - 从文件d:\project\pythonllm\zhaopin.txt加载了21个URL
+2025-12-29 17:52:18 | INFO     | main:main:189 - 开始批量处理21个URL
+2025-12-29 17:52:18 | INFO     | recruitment_processor:process:49 - 处理boss招聘信息: https://www.zhipin.com/job_detail/4dc3428069357eb81HJ_2dm1FlRR.html?securityId=QWG872_Onm3RM-41XmMP9JxPv8bicByi8jEbeIOouI5fo4fDRrTkvobTK5XjhQRufqbdWLx1y0NFMgr8PbvxSo2ktCuW_3gqqSl0a5gc4o8GUEX5cH99EnEPuvLkpYFTDYd3fe3L6NaHP1_yTUZFf-of&ka=company_more_job_4dc3428069357eb81HJ_2dm1FlRR
+2025-12-29 17:52:19 | INFO     | requests_crawler:_request:90 - 成功获取 https://www.zhipin.com/job_detail/4dc3428069357eb81HJ_2dm1FlRR.html?securityId=QWG872_Onm3RM-41XmMP9JxPv8bicByi8jEbeIOouI5fo4fDRrTkvobTK5XjhQRufqbdWLx1y0NFMgr8PbvxSo2ktCuW_3gqqSl0a5gc4o8GUEX5cH99EnEPuvLkpYFTDYd3fe3L6NaHP1_yTUZFf-of&ka=company_more_job_4dc3428069357eb81HJ_2dm1FlRR，状态码: 200
+2025-12-29 17:52:22 | INFO     | recruitment_processor:process:83 - 成功处理招聘信息: None - None
+2025-12-29 17:52:22 | INFO     | recruitment_processor:process:49 - 处理boss招聘信息: https://www.zhipin.com/job_detail/b1bf0de284bffc84031y09m-EVVV.html?securityId=ivl9KA25BJliK-s1pAekjeZxNkmiaGdCePNhIzJE0n2uhoFRpWe3po6Dy57YSFQZtN186U2kYNJqZUcZkarU0pNmMkg2otJaIVyqzJlVEzB6ooLNYu3e5U8BM0zeO5Wv0es8soUapqyIWDqgx80__e_vWsY~&ka=company_more_job_b1bf0de284bffc84031y09m-EVVV
+2025-12-29 17:52:22 | INFO     | requests_crawler:_request:90 - 成功获取 https://www.zhipin.com/job_detail/b1bf0de284bffc84031y09m-EVVV.html?securityId=ivl9KA25BJliK-s1pAekjeZxNkmiaGdCePNhIzJE0n2uhoFRpWe3po6Dy57YSFQZtN186U2kYNJqZUcZkarU0pNmMkg2otJaIVyqzJlVEzB6ooLNYu3e5U8BM0zeO5Wv0es8soUapqyIWDqgx80__e_vWsY~&ka=company_more_job_b1bf0de284bffc84031y09m-EVVV，状态码: 200
+2025-12-29 17:52:24 | INFO     | recruitment_processor:process:83 - 成功处理招聘信息: None - None
+2025-12-29 17:52:24 | INFO     | recruitment_processor:process:49 - 处理boss招聘信息: https://www.zhipin.com/job_detail/06efbdb6311ef51b1nF42N-6FlFU.html?securityId=PS_PuwwDNmFcG-71ds3HIKYpwQdR4nCLxGGOvP8fVPQgvU-rZUyM1vvys5e67cAN_iRrIB-ny_OSL4QJ1Zg1hYR5zy7dtrBkUrVLvJqiAv3K80tU-e-5jrdD94yPirhA0zSojj8XxBMlnUebQEtMyw~~&ka=company_more_job_06efbdb6311ef51b1nF42N-6FlFU
+2025-12-29 17:52:24 | INFO     | requests_crawler:_request:90 - 成功获取 https://www.zhipin.com/job_detail/06efbdb6311ef51b1nF42N-6FlFU.html?securityId=PS_PuwwDNmFcG-71ds3HIKYpwQdR4nCLxGGOvP8fVPQgvU-rZUyM1vvys5e67cAN_iRrIB-ny_OSL4QJ1Zg1hYR5zy7dtrBkUrVLvJqiAv3K80tU-e-5jrdD94yPirhA0zSojj8XxBMlnUebQEtMyw~~&ka=company_more_job_06efbdb6311ef51b1nF42N-6FlFU，状态码: 200
+2025-12-29 17:52:34 | INFO     | recruitment_processor:process:83 - 成功处理招聘信息: None - None
+2025-12-29 17:52:34 | INFO     | recruitment_processor:process:49 - 处理boss招聘信息: https://www.zhipin.com/job_detail/f43115866ccb023a03170t65ElZW.html?securityId=SS5xdXp39BuyH-D1D9QC9-JWiR-2dvkWPlE35Vni00m-SUVRlQs9vwwd7meWGEes_wLxAilHOjReLyqHLkrEKhulhka23PIm7-6afGXndnjXGjBAzK4eiNBKY-BaPrCCiekD2dpV2DCMRDiLZ7PpDdw~&ka=company_more_job_f43115866ccb023a03170t65ElZW
+2025-12-29 17:52:34 | INFO     | requests_crawler:_request:90 - 成功获取 https://www.zhipin.com/job_detail/f43115866ccb023a03170t65ElZW.html?securityId=SS5xdXp39BuyH-D1D9QC9-JWiR-2dvkWPlE35Vni00m-SUVRlQs9vwwd7meWGEes_wLxAilHOjReLyqHLkrEKhulhka23PIm7-6afGXndnjXGjBAzK4eiNBKY-BaPrCCiekD2dpV2DCMRDiLZ7PpDdw~&ka=company_more_job_f43115866ccb023a03170t65ElZW，状态码: 200
+2025-12-29 17:52:37 | INFO     | recruitment_processor:process:83 - 成功处理招聘信息: None - None
+2025-12-29 17:52:37 | INFO     | recruitment_processor:process:49 - 处理boss招聘信息: https://www.zhipin.com/job_detail/1d12885834497343031y0967E1JX.html?securityId=cso5yYdixUsWY-z1XS4r01IN1eHi3KreWnSCLfbQSXeY7DzCDAnNfrQsOwPcMRLmJTnE_44FVRmL4XwLSrNS4Z4i_w5oqtsqrZrOpOpXxKfXf2R8JICthOprcR54MYbNnzapV6xlZyXbjma3yPWA5IA~&ka=company_more_job_1d12885834497343031y0967E1JX
+2025-12-29 17:52:37 | INFO     | requests_crawler:_request:90 - 成功获取 https://www.zhipin.com/job_detail/1d12885834497343031y0967E1JX.html?securityId=cso5yYdixUsWY-z1XS4r01IN1eHi3KreWnSCLfbQSXeY7DzCDAnNfrQsOwPcMRLmJTnE_44FVRmL4XwLSrNS4Z4i_w5oqtsqrZrOpOpXxKfXf2R8JICthOprcR54MYbNnzapV6xlZyXbjma3yPWA5IA~&ka=company_more_job_1d12885834497343031y0967E1JX，状态码: 200
+2025-12-29 17:52:40 | INFO     | recruitment_processor:process:83 - 成功处理招聘信息: None - None
+2025-12-29 17:52:40 | INFO     | recruitment_processor:process:49 - 处理boss招聘信息: https://www.zhipin.com/job_detail/cf1d71d3484d6a1a03F42968GVVY.html?securityId=Oznm-3_biapY0-X1EM9FOXNsTfee1dDjMvPiSgVe4rQB-TezeXuoLMQMqkZLvTJthmSr8O2aZMCuN4Or_Rd29DwkGK9BSai-p4zu4z2DEG4DhWz1qvjxTk3I9qoKKQ3Fquql6TX0Fgkk7aoTyV-6tw~~&ka=company_more_job_cf1d71d3484d6a1a03F42968GVVY
+2025-12-29 17:52:40 | INFO     | requests_crawler:_request:90 - 成功获取 https://www.zhipin.com/job_detail/cf1d71d3484d6a1a03F42968GVVY.html?securityId=Oznm-3_biapY0-X1EM9FOXNsTfee1dDjMvPiSgVe4rQB-TezeXuoLMQMqkZLvTJthmSr8O2aZMCuN4Or_Rd29DwkGK9BSai-p4zu4z2DEG4DhWz1qvjxTk3I9qoKKQ3Fquql6TX0Fgkk7aoTyV-6tw~~&ka=company_more_job_cf1d71d3484d6a1a03F42968GVVY，状态码: 200
+2025-12-29 17:52:43 | INFO     | recruitment_processor:process:83 - 成功处理招聘信息: None - None
+2025-12-29 17:52:43 | INFO     | recruitment_processor:process:49 - 处理boss招聘信息: https://www.zhipin.com/job_detail/2a853a690420e06a031_2N25GFpU.html?securityId=lAFbXaHVarLRn-l1XY3YHUF8cazXYeKs_SHVdecZL5K70h4nm6cWMiIwTPJ5_vg5IvTvjgFRNfqH6HfgvV8DDZ4-UlwPXs3SY2gpnSMMJg_ibSYiSEBsimJp5L8NXMlu20FGFhmtFhi0TXuxrBlRGg~~&ka=company_more_job_2a853a690420e06a031_2N25GFpU
+2025-12-29 17:52:43 | INFO     | requests_crawler:_request:90 - 成功获取 https://www.zhipin.com/job_detail/2a853a690420e06a031_2N25GFpU.html?securityId=lAFbXaHVarLRn-l1XY3YHUF8cazXYeKs_SHVdecZL5K70h4nm6cWMiIwTPJ5_vg5IvTvjgFRNfqH6HfgvV8DDZ4-UlwPXs3SY2gpnSMMJg_ibSYiSEBsimJp5L8NXMlu20FGFhmtFhi0TXuxrBlRGg~~&ka=company_more_job_2a853a690420e06a031_2N25GFpU，状态码: 200
+2025-12-29 17:52:45 | INFO     | recruitment_processor:process:83 - 成功处理招聘信息: None - None
+2025-12-29 17:52:45 | INFO     | recruitment_processor:process:49 - 处理boss招聘信息: https://www.zhipin.com/job_detail/6e5181d9a81950ff03Z_3dS5ElRU.html?securityId=N3gtK8rLjXu9n-W1wtRCVcMVbgqa0BtQmABrjyi-zFeDaX2xv8i--EhURsGkpwzKq2Drcp-cXtY_ljGNw_Uk_IDPoLne_enPBrCelyiT8Y51Hiz1q1zHvcKw3UuqYCDfxHI5BNA-eE8xQK4zrYgoBE0~&ka=company_more_job_6e5181d9a81950ff03Z_3dS5ElRU
+2025-12-29 17:52:46 | INFO     | requests_crawler:_request:90 - 成功获取 https://www.zhipin.com/job_detail/6e5181d9a81950ff03Z_3dS5ElRU.html?securityId=N3gtK8rLjXu9n-W1wtRCVcMVbgqa0BtQmABrjyi-zFeDaX2xv8i--EhURsGkpwzKq2Drcp-cXtY_ljGNw_Uk_IDPoLne_enPBrCelyiT8Y51Hiz1q1zHvcKw3UuqYCDfxHI5BNA-eE8xQK4zrYgoBE0~&ka=company_more_job_6e5181d9a81950ff03Z_3dS5ElRU，状态码: 200
+2025-12-29 17:52:48 | INFO     | recruitment_processor:process:83 - 成功处理招聘信息: None - None
+2025-12-29 17:52:48 | INFO     | recruitment_processor:process:49 - 处理boss招聘信息: https://www.zhipin.com/job_detail/0e5135234228706403x809i8EVRU.html?securityId=TVo29l6hPV1xJ-110BwleMkB2R77T5GTLt4GfAmh1xqcyDP_uODXwuGJhmqPVQG0W8S6_rOYmLJ19V2z7I1dI9NXmEIL7ZAw7fhzgHEfA-Lmxw8AHfsZYUEEYRzphuDZu_PQhQH2IoLKiVRI9ekk6Tw~&ka=company_more_job_0e5135234228706403x809i8EVRU
+2025-12-29 17:52:48 | INFO     | requests_crawler:_request:90 - 成功获取 https://www.zhipin.com/job_detail/0e5135234228706403x809i8EVRU.html?securityId=TVo29l6hPV1xJ-110BwleMkB2R77T5GTLt4GfAmh1xqcyDP_uODXwuGJhmqPVQG0W8S6_rOYmLJ19V2z7I1dI9NXmEIL7ZAw7fhzgHEfA-Lmxw8AHfsZYUEEYRzphuDZu_PQhQH2IoLKiVRI9ekk6Tw~&ka=company_more_job_0e5135234228706403x809i8EVRU，状态码: 200
+2025-12-29 17:52:51 | INFO     | recruitment_processor:process:83 - 成功处理招聘信息: None - None
+2025-12-29 17:52:51 | INFO     | recruitment_processor:process:49 - 处理boss招聘信息: https://www.zhipin.com/job_detail/ee3843f7955f9ce81nB72Ni8FVc~.html?securityId=ivGx9aOg6FbLz-t1U4xasaSAkBspBH_1J68Z9-kDym8wRFC4XDqCvJtnvw3_JoAXtNZTOG4WtS6wlgFsyqlUc_x64W_Ai9Gt0ryY4mHLtBY1COo_sPFKoypktL64WtdRCHGm2d-iCstzUZuKuaEdKw~~&ka=company_more_job_ee3843f7955f9ce81nB72Ni8FVc~
+2025-12-29 17:52:51 | INFO     | requests_crawler:_request:90 - 成功获取 https://www.zhipin.com/job_detail/ee3843f7955f9ce81nB72Ni8FVc~.html?securityId=ivGx9aOg6FbLz-t1U4xasaSAkBspBH_1J68Z9-kDym8wRFC4XDqCvJtnvw3_JoAXtNZTOG4WtS6wlgFsyqlUc_x64W_Ai9Gt0ryY4mHLtBY1COo_sPFKoypktL64WtdRCHGm2d-iCstzUZuKuaEdKw~~&ka=company_more_job_ee3843f7955f9ce81nB72Ni8FVc~，状态码: 200
+2025-12-29 17:52:54 | INFO     | recruitment_processor:process:83 - 成功处理招聘信息: None - None
+2025-12-29 17:52:54 | INFO     | recruitment_processor:process:49 - 处理boss招聘信息: https://www.zhipin.com/job_detail/4998cd7d43dcca9a03F939i9GFpU.html?securityId=p9iAcn2QV19VL-m1FbHrsit99aPohZXJ6_rfVRzJluX0ih1N43rAzGRNog_G-61PMODybvIw610-ApvAZMtyRUq-iUZVgMLQtdIjoHWxQMdlOjcRud_F71ZlUieIeOMmZ2m7ktDlJyXJNoC1tQju&ka=company_more_job_4998cd7d43dcca9a03F939i9GFpU
+2025-12-29 17:52:54 | INFO     | requests_crawler:_request:90 - 成功获取 https://www.zhipin.com/job_detail/4998cd7d43dcca9a03F939i9GFpU.html?securityId=p9iAcn2QV19VL-m1FbHrsit99aPohZXJ6_rfVRzJluX0ih1N43rAzGRNog_G-61PMODybvIw610-ApvAZMtyRUq-iUZVgMLQtdIjoHWxQMdlOjcRud_F71ZlUieIeOMmZ2m7ktDlJyXJNoC1tQju&ka=company_more_job_4998cd7d43dcca9a03F939i9GFpU，状态码: 200
+2025-12-29 17:52:57 | INFO     | recruitment_processor:process:83 - 成功处理招聘信息: None - None
+2025-12-29 17:52:57 | INFO     | recruitment_processor:process:49 - 处理boss招聘信息: https://www.zhipin.com/job_detail/63ea26fbe79e90d303B63ti-EVE~.html?securityId=ag0216h6GPJ0F-q1_O7oPbwRliXcZrIVyl7njE3mnEmEOVILvc3OVmhFqwabJ7N2ti7Rldo_5NzOfJz4WrLYa9OX119fQvCxe5-fA2vaw7mzbsVciDrW-ZkWSteixSqoVXt8w3f65TycQTHp4nXP&ka=company_more_job_63ea26fbe79e90d303B63ti-EVE~
+2025-12-29 17:52:57 | INFO     | requests_crawler:_request:90 - 成功获取 https://www.zhipin.com/job_detail/63ea26fbe79e90d303B63ti-EVE~.html?securityId=ag0216h6GPJ0F-q1_O7oPbwRliXcZrIVyl7njE3mnEmEOVILvc3OVmhFqwabJ7N2ti7Rldo_5NzOfJz4WrLYa9OX119fQvCxe5-fA2vaw7mzbsVciDrW-ZkWSteixSqoVXt8w3f65TycQTHp4nXP&ka=company_more_job_63ea26fbe79e90d303B63ti-EVE~，状态码: 200
+2025-12-29 17:52:59 | INFO     | recruitment_processor:process:83 - 成功处理招聘信息: None - None
+2025-12-29 17:52:59 | INFO     | recruitment_processor:process:49 - 处理boss招聘信息: https://www.zhipin.com/job_detail/67b4df7c9b69bca203N52N6-GFFR.html?securityId=R1uXI9dQBg7VV-11Xm75NxJQaVpCaVuZibdcN-_8hZyhnBYFXcbnzGUpuKECb_4kRcvxtcfWh9M4Mjs2tGBbymSmnfL4IXxmmxD1NYsdKJ86JeeFAy3faX-rQNukYnxmhts3IM4uFDsPeCvu68Atm2ll8W6miSl1hYArJdIpvBee5LrHqDnu4SBUhoz4LvmKBxgZa4597z4lvTVgwYg~&ka=company_more_job_67b4df7c9b69bca203N52N6-GFFR
+2025-12-29 17:53:00 | INFO     | requests_crawler:_request:90 - 成功获取 https://www.zhipin.com/job_detail/67b4df7c9b69bca203N52N6-GFFR.html?securityId=R1uXI9dQBg7VV-11Xm75NxJQaVpCaVuZibdcN-_8hZyhnBYFXcbnzGUpuKECb_4kRcvxtcfWh9M4Mjs2tGBbymSmnfL4IXxmmxD1NYsdKJ86JeeFAy3faX-rQNukYnxmhts3IM4uFDsPeCvu68Atm2ll8W6miSl1hYArJdIpvBee5LrHqDnu4SBUhoz4LvmKBxgZa4597z4lvTVgwYg~&ka=company_more_job_67b4df7c9b69bca203N52N6-GFFR，状态码: 200
+2025-12-29 17:53:02 | INFO     | recruitment_processor:process:83 - 成功处理招聘信息: None - None
+2025-12-29 17:53:02 | INFO     | recruitment_processor:process:49 - 处理boss招聘信息: https://www.zhipin.com/job_detail/db9a22b815ef33c603d-3NS_F1tW.html?securityId=2GZYcW4yGKRqF-31mXJvvOZwIXfZZpZODTkWOB8nXRH_Xoh57E8shoKqOONCZ9l_0Otizo3DJ1xiYRNPqSKUuTapg6TDOCb_HRByy0ZFldqACK2tm9UGHPH-7nBfFCH-sbBdpJM-16u_WpFg-h-g7nCp&ka=company_more_job_db9a22b815ef33c603d-3NS_F1tW
+2025-12-29 17:53:02 | INFO     | requests_crawler:_request:90 - 成功获取 https://www.zhipin.com/job_detail/db9a22b815ef33c603d-3NS_F1tW.html?securityId=2GZYcW4yGKRqF-31mXJvvOZwIXfZZpZODTkWOB8nXRH_Xoh57E8shoKqOONCZ9l_0Otizo3DJ1xiYRNPqSKUuTapg6TDOCb_HRByy0ZFldqACK2tm9UGHPH-7nBfFCH-sbBdpJM-16u_WpFg-h-g7nCp&ka=company_more_job_db9a22b815ef33c603d-3NS_F1tW，状态码: 200
+2025-12-29 17:53:05 | INFO     | recruitment_processor:process:83 - 成功处理招聘信息: None - None
+2025-12-29 17:53:05 | INFO     | recruitment_processor:process:49 - 处理boss招聘信息: https://www.zhipin.com/web/geek/jobs?city=101010100&multiBusinessDistrict=110108&position=100101&jobType=1901&salary=406&experience=106°ree=203&scale=305
+2025-12-29 17:53:05 | INFO     | requests_crawler:_request:90 - 成功获取 https://www.zhipin.com/web/geek/jobs?city=101010100&multiBusinessDistrict=110108&position=100101&jobType=1901&salary=406&experience=106°ree=203&scale=305，状态码: 200
+2025-12-29 17:53:07 | INFO     | recruitment_processor:process:83 - 成功处理招聘信息: None - None
+2025-12-29 17:53:07 | INFO     | recruitment_processor:process:49 - 处理zhaopin招聘信息: https://www.zhaopin.com/jobdetail/CC343936330J40781956716.htm?refcode=4019&srccode=401901&preactionid=1a78d074-c44a-434d-ae75-c951c8ea85c8
+2025-12-29 17:53:08 | INFO     | requests_crawler:_request:90 - 成功获取 https://www.zhaopin.com/jobdetail/CC343936330J40781956716.htm?refcode=4019&srccode=401901&preactionid=1a78d074-c44a-434d-ae75-c951c8ea85c8，状态码: 200
+2025-12-29 17:53:11 | INFO     | recruitment_processor:process:83 - 成功处理招聘信息: None - None
+2025-12-29 17:53:11 | INFO     | recruitment_processor:process:49 - 处理zhaopin招聘信息: https://www.zhaopin.com/jobdetail/CCL1492513130J40813972801.htm?refcode=4019&srccode=401901&preactionid=d53b8480-f15a-478f-81c4-30edbd04a997
+2025-12-29 17:53:12 | INFO     | requests_crawler:_request:90 - 成功获取 https://www.zhaopin.com/jobdetail/CCL1492513130J40813972801.htm?refcode=4019&srccode=401901&preactionid=d53b8480-f15a-478f-81c4-30edbd04a997，状态码: 200
+2025-12-29 17:53:14 | INFO     | recruitment_processor:process:83 - 成功处理招聘信息: None - None
+2025-12-29 17:53:14 | INFO     | recruitment_processor:process:49 - 处理zhaopin招聘信息: https://www.zhaopin.com/jobdetail/CC120143600J40888967415.htm?refcode=4019&srccode=401901&preactionid=d53b8480-f15a-478f-81c4-30edbd04a997
+2025-12-29 17:53:14 | INFO     | requests_crawler:_request:90 - 成功获取 https://www.zhaopin.com/jobdetail/CC120143600J40888967415.htm?refcode=4019&srccode=401901&preactionid=d53b8480-f15a-478f-81c4-30edbd04a997，状态码: 200
+2025-12-29 17:53:17 | INFO     | recruitment_processor:process:83 - 成功处理招聘信息: None - None
+2025-12-29 17:53:17 | INFO     | recruitment_processor:process:49 - 处理zhaopin招聘信息: https://www.zhaopin.com/jobdetail/CCL1320036280J40970301104.htm?refcode=4019&srccode=401901&preactionid=e94d89a4-92d8-4e31-b84b-c884f5878164
+2025-12-29 17:53:17 | INFO     | requests_crawler:_request:90 - 成功获取 https://www.zhaopin.com/jobdetail/CCL1320036280J40970301104.htm?refcode=4019&srccode=401901&preactionid=e94d89a4-92d8-4e31-b84b-c884f5878164，状态码: 200
+2025-12-29 17:53:19 | INFO     | recruitment_processor:process:83 - 成功处理招聘信息: None - None
+2025-12-29 17:53:19 | INFO     | recruitment_processor:process:49 - 处理zhaopin招聘信息: https://www.zhaopin.com/jobdetail/CC637366030J40719551506.htm?refcode=4019&srccode=401901&preactionid=84190a42-0320-4976-b752-caeebb68b8ac
+2025-12-29 17:53:20 | INFO     | requests_crawler:_request:90 - 成功获取 https://www.zhaopin.com/jobdetail/CC637366030J40719551506.htm?refcode=4019&srccode=401901&preactionid=84190a42-0320-4976-b752-caeebb68b8ac，状态码: 200
+2025-12-29 17:53:22 | INFO     | recruitment_processor:process:83 - 成功处理招聘信息: None - None
+2025-12-29 17:53:22 | INFO     | recruitment_processor:process:49 - 处理zhaopin招聘信息: https://www.zhaopin.com/sou/jl530/kw01500O80EO062NO0AF8G/p1?re=2006&sl=25001,35000&el=4&we=0510&et=2&cs=5&kt=3
+2025-12-29 17:53:22 | INFO     | requests_crawler:_request:90 - 成功获取 https://www.zhaopin.com/sou/jl530/kw01500O80EO062NO0AF8G/p1?re=2006&sl=25001,35000&el=4&we=0510&et=2&cs=5&kt=3，状态码: 200
+2025-12-29 17:53:24 | INFO     | recruitment_processor:process:83 - 成功处理招聘信息: None - None
+2025-12-29 17:53:24 | INFO     | base_processor:batch_process:78 - 批量处理完成，共21个URL，成功21个
+2025-12-29 17:53:24 | INFO     | main:main:195 - 成功处理21个招聘信息，正在保存结果...
+2025-12-29 17:53:24 | INFO     | output_formatter:format_and_save:65 - 数据已保存到: data/output\recruitment_info_20251229_175324_831.json
+2025-12-29 17:53:24 | SUCCESS  | main:main:197 - 爬取任务完成！
+2025-12-29 17:53:24 | INFO     | requests_crawler:close:143 - Requests爬虫会话已关闭
+2025-12-29 17:53:32 | INFO     | logger:configure:52 - 日志配置完成，日志文件: logs/recruitment_analyzer.log
+2025-12-29 17:53:32 | INFO     | main:main:143 - 开始分析招聘信息文件: d:\project\pythonllm\data\output\recruitment_info_20251229_175324_831.json
+2025-12-29 17:53:32 | INFO     | llm_factory:create_client:41 - 创建千问客户端实例
+2025-12-29 17:53:32 | INFO     | base_llm:__init__:28 - 初始化QwenClient客户端，模型: qwen-turbo
+2025-12-29 17:53:32 | INFO     | qwen_client:__init__:57 - 千问客户端已初始化，模型: qwen-turbo
+2025-12-29 17:53:32 | INFO     | recruitment_analyzer:analyze_from_file:43 - 开始分析文件: d:\project\pythonllm\data\output\recruitment_info_20251229_175324_831.json
+2025-12-29 17:53:32 | INFO     | recruitment_analyzer:analyze_from_file:54 - 成功加载21条招聘信息
+2025-12-29 17:53:32 | INFO     | recruitment_analyzer:analyze:73 - 开始分析21条招聘信息
+2025-12-29 17:53:32 | INFO     | recruitment_analyzer:analyze:96 - 调用大模型进行招聘信息分析...
+2025-12-29 17:53:47 | INFO     | recruitment_analyzer:analyze:99 - 招聘信息分析完成
+2025-12-29 17:53:47 | INFO     | recruitment_analyzer:_save_analysis_report:154 - 分析报告已保存到: data/output\recruitment_info_20251229_175324_831_analysis_20251229_175347_257.md
+2025-12-29 17:53:47 | SUCCESS  | main:main:151 - 分析完成！分析报告已保存至: data/output\recruitment_info_20251229_175324_831_analysis_20251229_175347_257.md
+2025-12-29 17:54:41 | INFO     | logger:configure:52 - 日志配置完成，日志文件: logs/recruitment_analyzer.log
+2025-12-29 17:54:41 | INFO     | config_loader:update:192 - 更新配置: output.format = json
+2025-12-29 17:54:41 | INFO     | config_loader:update:192 - 更新配置: output.directory = data/output
+2025-12-29 17:54:41 | INFO     | crawler_factory:create_crawler:29 - 创建Selenium爬虫实例
+2025-12-29 17:54:41 | INFO     | selenium_crawler:__init__:33 - 启用无头模式
+2025-12-29 17:54:42 | ERROR    | selenium_crawler:__init__:74 - Selenium WebDriver初始化失败: Could not reach host. Are you offline?
+2025-12-29 17:54:42 | ERROR    | main:main:205 - 程序执行失败: Could not reach host. Are you offline?
+2025-12-29 17:56:27 | INFO     | logger:configure:52 - 日志配置完成，日志文件: logs/recruitment_analyzer.log
+2025-12-29 17:56:27 | INFO     | config_loader:update:192 - 更新配置: output.format = json
+2025-12-29 17:56:27 | INFO     | config_loader:update:192 - 更新配置: output.directory = data/output
+2025-12-29 17:56:27 | INFO     | crawler_factory:create_crawler:26 - 创建Requests爬虫实例
+2025-12-29 17:56:27 | INFO     | llm_factory:create_client:41 - 创建千问客户端实例
+2025-12-29 17:56:27 | INFO     | base_llm:__init__:28 - 初始化QwenClient客户端，模型: qwen-turbo
+2025-12-29 17:56:28 | INFO     | qwen_client:__init__:57 - 千问客户端已初始化，模型: qwen-turbo
+2025-12-29 17:56:28 | INFO     | base_processor:__init__:22 - 初始化RecruitmentProcessor处理器
+2025-12-29 17:56:28 | INFO     | main:load_urls_from_file:115 - 从文件d:\project\pythonllm\zhaopin.txt加载了5个URL
+2025-12-29 17:56:28 | INFO     | main:main:189 - 开始批量处理5个URL
+2025-12-29 17:56:28 | INFO     | recruitment_processor:process:49 - 处理boss招聘信息: https://www.zhipin.com/job_detail/4dc3428069357eb81HJ_2dm1FlRR.html?securityId=QWG872_Onm3RM-41XmMP9JxPv8bicByi8jEbeIOouI5fo4fDRrTkvobTK5XjhQRufqbdWLx1y0NFMgr8PbvxSo2ktCuW_3gqqSl0a5gc4o8GUEX5cH99EnEPuvLkpYFTDYd3fe3L6NaHP1_yTUZFf-of&ka=company_more_job_4dc3428069357eb81HJ_2dm1FlRR
+2025-12-29 17:56:28 | INFO     | requests_crawler:_request:90 - 成功获取 https://www.zhipin.com/job_detail/4dc3428069357eb81HJ_2dm1FlRR.html?securityId=QWG872_Onm3RM-41XmMP9JxPv8bicByi8jEbeIOouI5fo4fDRrTkvobTK5XjhQRufqbdWLx1y0NFMgr8PbvxSo2ktCuW_3gqqSl0a5gc4o8GUEX5cH99EnEPuvLkpYFTDYd3fe3L6NaHP1_yTUZFf-of&ka=company_more_job_4dc3428069357eb81HJ_2dm1FlRR，状态码: 200
+2025-12-29 17:56:31 | INFO     | recruitment_processor:process:83 - 成功处理招聘信息: None - None
+2025-12-29 17:56:31 | INFO     | recruitment_processor:process:49 - 处理boss招聘信息: https://www.zhipin.com/job_detail/b1bf0de284bffc84031y09m-EVVV.html?securityId=ivl9KA25BJliK-s1pAekjeZxNkmiaGdCePNhIzJE0n2uhoFRpWe3po6Dy57YSFQZtN186U2kYNJqZUcZkarU0pNmMkg2otJaIVyqzJlVEzB6ooLNYu3e5U8BM0zeO5Wv0es8soUapqyIWDqgx80__e_vWsY~&ka=company_more_job_b1bf0de284bffc84031y09m-EVVV
+2025-12-29 17:56:31 | INFO     | requests_crawler:_request:90 - 成功获取 https://www.zhipin.com/job_detail/b1bf0de284bffc84031y09m-EVVV.html?securityId=ivl9KA25BJliK-s1pAekjeZxNkmiaGdCePNhIzJE0n2uhoFRpWe3po6Dy57YSFQZtN186U2kYNJqZUcZkarU0pNmMkg2otJaIVyqzJlVEzB6ooLNYu3e5U8BM0zeO5Wv0es8soUapqyIWDqgx80__e_vWsY~&ka=company_more_job_b1bf0de284bffc84031y09m-EVVV，状态码: 200
+2025-12-29 17:56:34 | INFO     | recruitment_processor:process:83 - 成功处理招聘信息: None - None
+2025-12-29 17:56:34 | INFO     | recruitment_processor:process:49 - 处理boss招聘信息: https://www.zhipin.com/job_detail/06efbdb6311ef51b1nF42N-6FlFU.html?securityId=PS_PuwwDNmFcG-71ds3HIKYpwQdR4nCLxGGOvP8fVPQgvU-rZUyM1vvys5e67cAN_iRrIB-ny_OSL4QJ1Zg1hYR5zy7dtrBkUrVLvJqiAv3K80tU-e-5jrdD94yPirhA0zSojj8XxBMlnUebQEtMyw~~&ka=company_more_job_06efbdb6311ef51b1nF42N-6FlFU
+2025-12-29 17:56:35 | INFO     | requests_crawler:_request:90 - 成功获取 https://www.zhipin.com/job_detail/06efbdb6311ef51b1nF42N-6FlFU.html?securityId=PS_PuwwDNmFcG-71ds3HIKYpwQdR4nCLxGGOvP8fVPQgvU-rZUyM1vvys5e67cAN_iRrIB-ny_OSL4QJ1Zg1hYR5zy7dtrBkUrVLvJqiAv3K80tU-e-5jrdD94yPirhA0zSojj8XxBMlnUebQEtMyw~~&ka=company_more_job_06efbdb6311ef51b1nF42N-6FlFU，状态码: 200
+2025-12-29 17:56:37 | INFO     | recruitment_processor:process:83 - 成功处理招聘信息: None - None
+2025-12-29 17:56:37 | INFO     | recruitment_processor:process:49 - 处理boss招聘信息: https://www.zhipin.com/job_detail/f43115866ccb023a03170t65ElZW.html?securityId=SS5xdXp39BuyH-D1D9QC9-JWiR-2dvkWPlE35Vni00m-SUVRlQs9vwwd7meWGEes_wLxAilHOjReLyqHLkrEKhulhka23PIm7-6afGXndnjXGjBAzK4eiNBKY-BaPrCCiekD2dpV2DCMRDiLZ7PpDdw~&ka=company_more_job_f43115866ccb023a03170t65ElZW
+2025-12-29 17:56:38 | INFO     | requests_crawler:_request:90 - 成功获取 https://www.zhipin.com/job_detail/f43115866ccb023a03170t65ElZW.html?securityId=SS5xdXp39BuyH-D1D9QC9-JWiR-2dvkWPlE35Vni00m-SUVRlQs9vwwd7meWGEes_wLxAilHOjReLyqHLkrEKhulhka23PIm7-6afGXndnjXGjBAzK4eiNBKY-BaPrCCiekD2dpV2DCMRDiLZ7PpDdw~&ka=company_more_job_f43115866ccb023a03170t65ElZW，状态码: 200
+2025-12-29 17:56:40 | INFO     | recruitment_processor:process:83 - 成功处理招聘信息: None - None
+2025-12-29 17:56:40 | INFO     | recruitment_processor:process:49 - 处理boss招聘信息: https://www.zhipin.com/job_detail/1d12885834497343031y0967E1JX.html?securityId=cso5yYdixUsWY-z1XS4r01IN1eHi3KreWnSCLfbQSXeY7DzCDAnNfrQsOwPcMRLmJTnE_44FVRmL4XwLSrNS4Z4i_w5oqtsqrZrOpOpXxKfXf2R8JICthOprcR54MYbNnzapV6xlZyXbjma3yPWA5IA~&ka=company_more_job_1d12885834497343031y0967E1JX
+2025-12-29 17:56:41 | INFO     | requests_crawler:_request:90 - 成功获取 https://www.zhipin.com/job_detail/1d12885834497343031y0967E1JX.html?securityId=cso5yYdixUsWY-z1XS4r01IN1eHi3KreWnSCLfbQSXeY7DzCDAnNfrQsOwPcMRLmJTnE_44FVRmL4XwLSrNS4Z4i_w5oqtsqrZrOpOpXxKfXf2R8JICthOprcR54MYbNnzapV6xlZyXbjma3yPWA5IA~&ka=company_more_job_1d12885834497343031y0967E1JX，状态码: 200
+2025-12-29 17:56:45 | INFO     | recruitment_processor:process:83 - 成功处理招聘信息: None - None
+2025-12-29 17:56:45 | INFO     | base_processor:batch_process:78 - 批量处理完成，共5个URL，成功5个
+2025-12-29 17:56:45 | INFO     | main:main:195 - 成功处理5个招聘信息，正在保存结果...
+2025-12-29 17:56:45 | INFO     | output_formatter:format_and_save:65 - 数据已保存到: data/output\recruitment_info_20251229_175645_863.json
+2025-12-29 17:56:45 | SUCCESS  | main:main:197 - 爬取任务完成！
+2025-12-29 17:56:45 | INFO     | requests_crawler:close:143 - Requests爬虫会话已关闭
+2025-12-29 17:56:56 | INFO     | logger:configure:52 - 日志配置完成，日志文件: logs/recruitment_analyzer.log
+2025-12-29 17:56:56 | INFO     | main:main:143 - 开始分析招聘信息文件: d:\project\pythonllm\data\output\recruitment_info_20251229_175645_863.json
+2025-12-29 17:56:56 | INFO     | llm_factory:create_client:41 - 创建千问客户端实例
+2025-12-29 17:56:56 | INFO     | base_llm:__init__:28 - 初始化QwenClient客户端，模型: qwen-turbo
+2025-12-29 17:56:56 | INFO     | qwen_client:__init__:57 - 千问客户端已初始化，模型: qwen-turbo
+2025-12-29 17:56:56 | INFO     | recruitment_analyzer:analyze_from_file:43 - 开始分析文件: d:\project\pythonllm\data\output\recruitment_info_20251229_175645_863.json
+2025-12-29 17:56:56 | INFO     | recruitment_analyzer:analyze_from_file:54 - 成功加载5条招聘信息
+2025-12-29 17:56:56 | INFO     | recruitment_analyzer:analyze:73 - 开始分析5条招聘信息
+2025-12-29 17:56:56 | INFO     | recruitment_analyzer:analyze:96 - 调用大模型进行招聘信息分析...
+2025-12-29 17:57:03 | INFO     | recruitment_analyzer:analyze:99 - 招聘信息分析完成
+2025-12-29 17:57:03 | INFO     | recruitment_analyzer:_save_analysis_report:154 - 分析报告已保存到: data/output\recruitment_info_20251229_175645_863_analysis_20251229_175703_152.md
+2025-12-29 17:57:03 | SUCCESS  | main:main:151 - 分析完成！分析报告已保存至: data/output\recruitment_info_20251229_175645_863_analysis_20251229_175703_152.md
+2025-12-29 17:58:40 | INFO     | logger:configure:52 - 日志配置完成，日志文件: logs/recruitment_analyzer.log
+2025-12-29 17:58:40 | INFO     | config_loader:update:192 - 更新配置: output.format = json
+2025-12-29 17:58:40 | INFO     | config_loader:update:192 - 更新配置: output.directory = data/output
+2025-12-29 17:58:40 | INFO     | crawler_factory:create_crawler:26 - 创建Requests爬虫实例
+2025-12-29 17:58:40 | INFO     | llm_factory:create_client:41 - 创建千问客户端实例
+2025-12-29 17:58:40 | INFO     | base_llm:__init__:28 - 初始化QwenClient客户端，模型: qwen-turbo
+2025-12-29 17:58:41 | INFO     | qwen_client:__init__:57 - 千问客户端已初始化，模型: qwen-turbo
+2025-12-29 17:58:41 | INFO     | base_processor:__init__:22 - 初始化RecruitmentProcessor处理器
+2025-12-29 17:58:41 | INFO     | main:load_urls_from_file:115 - 从文件d:\project\pythonllm\zhaopin.txt加载了2个URL
+2025-12-29 17:58:41 | INFO     | main:main:189 - 开始批量处理2个URL
+2025-12-29 17:58:41 | INFO     | recruitment_processor:process:49 - 处理boss招聘信息: https://www.zhipin.com/job_detail/4dc3428069357eb81HJ_2dm1FlRR.html?securityId=QWG872_Onm3RM-41XmMP9JxPv8bicByi8jEbeIOouI5fo4fDRrTkvobTK5XjhQRufqbdWLx1y0NFMgr8PbvxSo2ktCuW_3gqqSl0a5gc4o8GUEX5cH99EnEPuvLkpYFTDYd3fe3L6NaHP1_yTUZFf-of&ka=company_more_job_4dc3428069357eb81HJ_2dm1FlRR
+2025-12-29 17:58:43 | INFO     | requests_crawler:_request:90 - 成功获取 https://www.zhipin.com/job_detail/4dc3428069357eb81HJ_2dm1FlRR.html?securityId=QWG872_Onm3RM-41XmMP9JxPv8bicByi8jEbeIOouI5fo4fDRrTkvobTK5XjhQRufqbdWLx1y0NFMgr8PbvxSo2ktCuW_3gqqSl0a5gc4o8GUEX5cH99EnEPuvLkpYFTDYd3fe3L6NaHP1_yTUZFf-of&ka=company_more_job_4dc3428069357eb81HJ_2dm1FlRR，状态码: 200
+2025-12-29 17:58:46 | INFO     | recruitment_processor:process:83 - 成功处理招聘信息: None - None
+2025-12-29 17:58:46 | INFO     | recruitment_processor:process:49 - 处理boss招聘信息: https://www.zhipin.com/job_detail/b1bf0de284bffc84031y09m-EVVV.html?securityId=ivl9KA25BJliK-s1pAekjeZxNkmiaGdCePNhIzJE0n2uhoFRpWe3po6Dy57YSFQZtN186U2kYNJqZUcZkarU0pNmMkg2otJaIVyqzJlVEzB6ooLNYu3e5U8BM0zeO5Wv0es8soUapqyIWDqgx80__e_vWsY~&ka=company_more_job_b1bf0de284bffc84031y09m-EVVV
+2025-12-29 17:58:47 | INFO     | requests_crawler:_request:90 - 成功获取 https://www.zhipin.com/job_detail/b1bf0de284bffc84031y09m-EVVV.html?securityId=ivl9KA25BJliK-s1pAekjeZxNkmiaGdCePNhIzJE0n2uhoFRpWe3po6Dy57YSFQZtN186U2kYNJqZUcZkarU0pNmMkg2otJaIVyqzJlVEzB6ooLNYu3e5U8BM0zeO5Wv0es8soUapqyIWDqgx80__e_vWsY~&ka=company_more_job_b1bf0de284bffc84031y09m-EVVV，状态码: 200
+2025-12-29 17:58:49 | INFO     | recruitment_processor:process:83 - 成功处理招聘信息: None - None
+2025-12-29 17:58:49 | INFO     | base_processor:batch_process:78 - 批量处理完成，共2个URL，成功2个
+2025-12-29 17:58:49 | INFO     | main:main:195 - 成功处理2个招聘信息，正在保存结果...
+2025-12-29 17:58:49 | INFO     | output_formatter:format_and_save:65 - 数据已保存到: data/output\recruitment_info_20251229_175849_697.json
+2025-12-29 17:58:49 | SUCCESS  | main:main:197 - 爬取任务完成！
+2025-12-29 17:58:49 | INFO     | requests_crawler:close:143 - Requests爬虫会话已关闭
+2025-12-29 18:01:04 | INFO     | logger:configure:52 - 日志配置完成，日志文件: logs/recruitment_analyzer.log
+2025-12-29 18:01:04 | INFO     | config_loader:update:192 - 更新配置: output.format = json
+2025-12-29 18:01:04 | INFO     | config_loader:update:192 - 更新配置: output.directory = data/output
+2025-12-29 18:01:04 | INFO     | crawler_factory:create_crawler:26 - 创建Requests爬虫实例
+2025-12-29 18:01:04 | INFO     | llm_factory:create_client:41 - 创建千问客户端实例
+2025-12-29 18:01:04 | INFO     | base_llm:__init__:28 - 初始化QwenClient客户端，模型: qwen-turbo
+2025-12-29 18:01:05 | INFO     | qwen_client:__init__:57 - 千问客户端已初始化，模型: qwen-turbo
+2025-12-29 18:01:05 | INFO     | base_processor:__init__:22 - 初始化RecruitmentProcessor处理器
+2025-12-29 18:01:05 | INFO     | main:main:181 - 开始处理单个URL: https://www.zhipin.com/job_detail/b1bf0de284bffc84031y09m-EVVV.html?securityId=ivl9KA25BJliK-s1pAekjeZxNkmiaGdCePNhIzJE0n2uhoFRpWe3po6Dy57YSFQZtN186U2kYNJqZUcZkarU0pNmMkg2otJaIVyqzJlVEzB6ooLNYu3e5U8BM0zeO5Wv0es8soUapqyIWDqgx80__e_vWsY~&ka=company_more_job_b1bf0de284bffc84031y09m-EVVV
+2025-12-29 18:01:05 | INFO     | recruitment_processor:process:49 - 处理boss招聘信息: https://www.zhipin.com/job_detail/b1bf0de284bffc84031y09m-EVVV.html?securityId=ivl9KA25BJliK-s1pAekjeZxNkmiaGdCePNhIzJE0n2uhoFRpWe3po6Dy57YSFQZtN186U2kYNJqZUcZkarU0pNmMkg2otJaIVyqzJlVEzB6ooLNYu3e5U8BM0zeO5Wv0es8soUapqyIWDqgx80__e_vWsY~&ka=company_more_job_b1bf0de284bffc84031y09m-EVVV
+2025-12-29 18:01:06 | INFO     | requests_crawler:_request:90 - 成功获取 https://www.zhipin.com/job_detail/b1bf0de284bffc84031y09m-EVVV.html?securityId=ivl9KA25BJliK-s1pAekjeZxNkmiaGdCePNhIzJE0n2uhoFRpWe3po6Dy57YSFQZtN186U2kYNJqZUcZkarU0pNmMkg2otJaIVyqzJlVEzB6ooLNYu3e5U8BM0zeO5Wv0es8soUapqyIWDqgx80__e_vWsY~&ka=company_more_job_b1bf0de284bffc84031y09m-EVVV，状态码: 200
+2025-12-29 18:01:10 | INFO     | recruitment_processor:process:80 - 成功处理招聘信息: None - None
+2025-12-29 18:01:10 | INFO     | main:main:195 - 成功处理1个招聘信息，正在保存结果...
+2025-12-29 18:01:10 | INFO     | output_formatter:format_and_save:65 - 数据已保存到: data/output\recruitment_info_20251229_180110_599.json
+2025-12-29 18:01:10 | SUCCESS  | main:main:197 - 爬取任务完成！
+2025-12-29 18:01:10 | INFO     | requests_crawler:close:143 - Requests爬虫会话已关闭
+2025-12-29 18:02:13 | INFO     | logger:configure:52 - 日志配置完成，日志文件: logs/recruitment_analyzer.log
+2025-12-29 18:02:13 | INFO     | config_loader:update:192 - 更新配置: output.format = json
+2025-12-29 18:02:13 | INFO     | config_loader:update:192 - 更新配置: output.directory = data/output
+2025-12-29 18:02:13 | INFO     | crawler_factory:create_crawler:26 - 创建Requests爬虫实例
+2025-12-29 18:02:13 | INFO     | llm_factory:create_client:41 - 创建千问客户端实例
+2025-12-29 18:02:13 | INFO     | base_llm:__init__:28 - 初始化QwenClient客户端，模型: qwen-turbo
+2025-12-29 18:02:13 | INFO     | qwen_client:__init__:57 - 千问客户端已初始化，模型: qwen-turbo
+2025-12-29 18:02:13 | INFO     | base_processor:__init__:22 - 初始化RecruitmentProcessor处理器
+2025-12-29 18:02:13 | INFO     | main:main:181 - 开始处理单个URL: https://www.zhipin.com/job_detail/b1bf0de284bffc84031y09m-EVVV.html?securityId=ivl9KA25BJliK-s1pAekjeZxNkmiaGdCePNhIzJE0n2uhoFRpWe3po6Dy57YSFQZtN186U2kYNJqZUcZkarU0pNmMkg2otJaIVyqzJlVEzB6ooLNYu3e5U8BM0zeO5Wv0es8soUapqyIWDqgx80__e_vWsY~&ka=company_more_job_b1bf0de284bffc84031y09m-EVVV
+2025-12-29 18:02:13 | INFO     | recruitment_processor:process:49 - 处理boss招聘信息: https://www.zhipin.com/job_detail/b1bf0de284bffc84031y09m-EVVV.html?securityId=ivl9KA25BJliK-s1pAekjeZxNkmiaGdCePNhIzJE0n2uhoFRpWe3po6Dy57YSFQZtN186U2kYNJqZUcZkarU0pNmMkg2otJaIVyqzJlVEzB6ooLNYu3e5U8BM0zeO5Wv0es8soUapqyIWDqgx80__e_vWsY~&ka=company_more_job_b1bf0de284bffc84031y09m-EVVV
+2025-12-29 18:02:14 | INFO     | requests_crawler:_request:90 - 成功获取 https://www.zhipin.com/job_detail/b1bf0de284bffc84031y09m-EVVV.html?securityId=ivl9KA25BJliK-s1pAekjeZxNkmiaGdCePNhIzJE0n2uhoFRpWe3po6Dy57YSFQZtN186U2kYNJqZUcZkarU0pNmMkg2otJaIVyqzJlVEzB6ooLNYu3e5U8BM0zeO5Wv0es8soUapqyIWDqgx80__e_vWsY~&ka=company_more_job_b1bf0de284bffc84031y09m-EVVV，状态码: 200
+2025-12-29 18:02:17 | INFO     | recruitment_processor:process:80 - 成功处理招聘信息: None - None
+2025-12-29 18:02:17 | INFO     | main:main:195 - 成功处理1个招聘信息，正在保存结果...
+2025-12-29 18:02:17 | INFO     | output_formatter:format_and_save:65 - 数据已保存到: data/output\recruitment_info_20251229_180217_260.json
+2025-12-29 18:02:17 | SUCCESS  | main:main:197 - 爬取任务完成！
+2025-12-29 18:02:17 | INFO     | requests_crawler:close:143 - Requests爬虫会话已关闭
+2025-12-29 18:03:15 | INFO     | logger:configure:52 - 日志配置完成，日志文件: logs/recruitment_analyzer.log
+2025-12-29 18:03:15 | INFO     | config_loader:update:192 - 更新配置: output.format = json
+2025-12-29 18:03:15 | INFO     | config_loader:update:192 - 更新配置: output.directory = data/output
+2025-12-29 18:03:15 | INFO     | crawler_factory:create_crawler:26 - 创建Requests爬虫实例
+2025-12-29 18:03:15 | INFO     | llm_factory:create_client:41 - 创建千问客户端实例
+2025-12-29 18:03:15 | INFO     | base_llm:__init__:28 - 初始化QwenClient客户端，模型: qwen-turbo
+2025-12-29 18:03:15 | INFO     | qwen_client:__init__:57 - 千问客户端已初始化，模型: qwen-turbo
+2025-12-29 18:03:15 | INFO     | base_processor:__init__:22 - 初始化RecruitmentProcessor处理器
+2025-12-29 18:03:15 | INFO     | main:main:181 - 开始处理单个URL: https://www.zhipin.com/job_detail/b1bf0de284bffc84031y09m-EVVV.html?securityId=ivl9KA25BJliK-s1pAekjeZxNkmiaGdCePNhIzJE0n2uhoFRpWe3po6Dy57YSFQZtN186U2kYNJqZUcZkarU0pNmMkg2otJaIVyqzJlVEzB6ooLNYu3e5U8BM0zeO5Wv0es8soUapqyIWDqgx80__e_vWsY~&ka=company_more_job_b1bf0de284bffc84031y09m-EVVV
+2025-12-29 18:03:15 | INFO     | recruitment_processor:process:49 - 处理boss招聘信息: https://www.zhipin.com/job_detail/b1bf0de284bffc84031y09m-EVVV.html?securityId=ivl9KA25BJliK-s1pAekjeZxNkmiaGdCePNhIzJE0n2uhoFRpWe3po6Dy57YSFQZtN186U2kYNJqZUcZkarU0pNmMkg2otJaIVyqzJlVEzB6ooLNYu3e5U8BM0zeO5Wv0es8soUapqyIWDqgx80__e_vWsY~&ka=company_more_job_b1bf0de284bffc84031y09m-EVVV
+2025-12-29 18:03:16 | INFO     | requests_crawler:_request:90 - 成功获取 https://www.zhipin.com/job_detail/b1bf0de284bffc84031y09m-EVVV.html?securityId=ivl9KA25BJliK-s1pAekjeZxNkmiaGdCePNhIzJE0n2uhoFRpWe3po6Dy57YSFQZtN186U2kYNJqZUcZkarU0pNmMkg2otJaIVyqzJlVEzB6ooLNYu3e5U8BM0zeO5Wv0es8soUapqyIWDqgx80__e_vWsY~&ka=company_more_job_b1bf0de284bffc84031y09m-EVVV，状态码: 200
+2025-12-29 18:03:19 | DEBUG    | qwen_client:generate:85 - 千问API完整响应: {"status_code": 200, "request_id": "ba0dc2d1-632e-4ed7-b996-912b003d3b23", "code": "", "message": "", "output": {"text": "{\n  \"job_title\": null,\n  \"company\": null,\n  \"company_address\": null,\n  \"company_founded\": null,\n  \"company_type\": null,\n  \"company_size\": null,\n  \"industry\": null,\n  \"location\": null,\n  \"salary\": null,\n  \"experience\": null,\n  \"education\": null,\n  \"job_type\": null,\n  \"department\": null,\n  \"description\": null,\n  \"requirements\": null,\n  \"benefits\": null,\n  \"benefits_detailed\": null,\n  \"post_date\": null,\n  \"contact_email\": null,\n  \"contact_phone\": null,\n  \"application_deadline\": null,\n  \"work_mode\": null,\n  \"probation_period\": null,\n  \"working_hours\": null,\n  \"training_development\": null,\n  \"interview_process\": null,\n  \"company_website\": null,\n  \"recruiter_name\": null\n}", "finish_reason": "stop", "choices": null}, "usage": {"input_tokens": 356, "output_tokens": 198, "prompt_tokens_details": {"cached_tokens": 0}, "total_tokens": 554}}
+2025-12-29 18:03:19 | DEBUG    | base_llm:_parse_extract_result:145 - LLM原始响应: {
+  "job_title": null,
+  "company": null,
+  "company_address": null,
+  "company_founded": null,
+  "company_type": null,
+  "company_size": null,
+  "industry": null,
+  "location": null,
+  "salary": null,
+  "experience": null,
+  "education": null,
+  "job_type": null,
+  "department": null,
+  "description": null,
+  "requirements": null,
+  "benefits": null,
+  "benefits_detailed": null,
+  "post_date": null,
+  "contact_email": null,
+  "contact_phone": null,
+  "application_deadline": null,
+  "work_mode": null,
+  "probation_period": null,
+  "working_hours": null,
+  "training_development": null,
+  "interview_process": null,
+  "company_website": null,
+  "recruiter_name": null
+}
+2025-12-29 18:03:19 | INFO     | recruitment_processor:process:80 - 成功处理招聘信息: None - None
+2025-12-29 18:03:19 | INFO     | main:main:195 - 成功处理1个招聘信息，正在保存结果...
+2025-12-29 18:03:19 | INFO     | output_formatter:format_and_save:65 - 数据已保存到: data/output\recruitment_info_20251229_180319_540.json
+2025-12-29 18:03:19 | SUCCESS  | main:main:197 - 爬取任务完成！
+2025-12-29 18:03:19 | INFO     | requests_crawler:close:143 - Requests爬虫会话已关闭
+2025-12-29 18:04:44 | INFO     | logger:configure:52 - 日志配置完成，日志文件: logs/recruitment_analyzer.log
+2025-12-29 18:04:44 | INFO     | config_loader:update:192 - 更新配置: output.format = json
+2025-12-29 18:04:44 | INFO     | config_loader:update:192 - 更新配置: output.directory = data/output
+2025-12-29 18:04:44 | INFO     | crawler_factory:create_crawler:29 - 创建Selenium爬虫实例
+2025-12-29 18:04:44 | INFO     | selenium_crawler:__init__:33 - 启用无头模式
+2025-12-29 18:04:49 | INFO     | selenium_crawler:__init__:72 - Selenium WebDriver初始化成功
+2025-12-29 18:04:49 | INFO     | llm_factory:create_client:41 - 创建千问客户端实例
+2025-12-29 18:04:49 | INFO     | base_llm:__init__:28 - 初始化QwenClient客户端，模型: qwen-turbo
+2025-12-29 18:04:50 | INFO     | qwen_client:__init__:57 - 千问客户端已初始化，模型: qwen-turbo
+2025-12-29 18:04:50 | INFO     | base_processor:__init__:22 - 初始化RecruitmentProcessor处理器
+2025-12-29 18:04:50 | INFO     | main:main:181 - 开始处理单个URL: https://www.zhipin.com/job_detail/b1bf0de284bffc84031y09m-EVVV.html?securityId=ivl9KA25BJliK-s1pAekjeZxNkmiaGdCePNhIzJE0n2uhoFRpWe3po6Dy57YSFQZtN186U2kYNJqZUcZkarU0pNmMkg2otJaIVyqzJlVEzB6ooLNYu3e5U8BM0zeO5Wv0es8soUapqyIWDqgx80__e_vWsY~&ka=company_more_job_b1bf0de284bffc84031y09m-EVVV
+2025-12-29 18:04:50 | INFO     | recruitment_processor:process:49 - 处理boss招聘信息: https://www.zhipin.com/job_detail/b1bf0de284bffc84031y09m-EVVV.html?securityId=ivl9KA25BJliK-s1pAekjeZxNkmiaGdCePNhIzJE0n2uhoFRpWe3po6Dy57YSFQZtN186U2kYNJqZUcZkarU0pNmMkg2otJaIVyqzJlVEzB6ooLNYu3e5U8BM0zeO5Wv0es8soUapqyIWDqgx80__e_vWsY~&ka=company_more_job_b1bf0de284bffc84031y09m-EVVV
+2025-12-29 18:04:51 | INFO     | selenium_crawler:_request:93 - 成功导航到: https://www.zhipin.com/job_detail/b1bf0de284bffc84031y09m-EVVV.html?securityId=ivl9KA25BJliK-s1pAekjeZxNkmiaGdCePNhIzJE0n2uhoFRpWe3po6Dy57YSFQZtN186U2kYNJqZUcZkarU0pNmMkg2otJaIVyqzJlVEzB6ooLNYu3e5U8BM0zeO5Wv0es8soUapqyIWDqgx80__e_vWsY~&ka=company_more_job_b1bf0de284bffc84031y09m-EVVV
+2025-12-29 18:04:54 | INFO     | selenium_crawler:_request:110 - 元素 .job-primary 已加载
+2025-12-29 18:04:54 | INFO     | selenium_crawler:_request:117 - 额外等待 5 秒
+2025-12-29 18:04:59 | INFO     | selenium_crawler:_request:122 - 成功获取页面源码，长度: 400430 字符
+2025-12-29 18:04:59 | INFO     | recruitment_processor:_extract_with_rules:208 - 使用规则从boss提取了2个字段
+2025-12-29 18:05:06 | INFO     | recruitment_processor:process:84 - 成功处理招聘信息: Java高级开发工程师 - 某大型知名生活服务(O2O)公司
+字节跳动
+京东集团
+京东集团
+某知名互联网金融公司
+公司名称北京与爱为舞科技有限公司
+2025-12-29 18:05:06 | INFO     | main:main:195 - 成功处理1个招聘信息，正在保存结果...
+2025-12-29 18:05:06 | INFO     | output_formatter:format_and_save:65 - 数据已保存到: data/output\recruitment_info_20251229_180506_322.json
+2025-12-29 18:05:06 | SUCCESS  | main:main:197 - 爬取任务完成！
+2025-12-29 18:05:08 | INFO     | selenium_crawler:close:183 - Selenium WebDriver已关闭
+2025-12-29 18:11:12 | INFO     | logger:configure:52 - 日志配置完成，日志文件: logs/recruitment_analyzer.log
+2025-12-29 18:11:12 | INFO     | config_loader:update:192 - 更新配置: output.format = json
+2025-12-29 18:11:12 | INFO     | config_loader:update:192 - 更新配置: output.directory = data/output
+2025-12-29 18:11:12 | INFO     | crawler_factory:create_crawler:29 - 创建Selenium爬虫实例
+2025-12-29 18:11:12 | INFO     | selenium_crawler:__init__:33 - 启用无头模式
+2025-12-29 18:11:16 | INFO     | selenium_crawler:__init__:72 - Selenium WebDriver初始化成功
+2025-12-29 18:11:16 | INFO     | llm_factory:create_client:41 - 创建千问客户端实例
+2025-12-29 18:11:16 | INFO     | base_llm:__init__:28 - 初始化QwenClient客户端，模型: qwen-turbo
+2025-12-29 18:11:16 | INFO     | qwen_client:__init__:57 - 千问客户端已初始化，模型: qwen-turbo
+2025-12-29 18:11:16 | INFO     | base_processor:__init__:22 - 初始化RecruitmentProcessor处理器
+2025-12-29 18:11:16 | INFO     | main:main:181 - 开始处理单个URL: https://www.zhipin.com/job_detail/b1bf0de284bffc84031y09m-EVVV.html?securityId=ivl9KA25BJliK-s1pAekjeZxNkmiaGdCePNhIzJE0n2uhoFRpWe3po6Dy57YSFQZtN186U2kYNJqZUcZkarU0pNmMkg2otJaIVyqzJlVEzB6ooLNYu3e5U8BM0zeO5Wv0es8soUapqyIWDqgx80__e_vWsY~&ka=company_more_job_b1bf0de284bffc84031y09m-EVVV\
+2025-12-29 18:11:16 | INFO     | recruitment_processor:process:49 - 处理boss招聘信息: https://www.zhipin.com/job_detail/b1bf0de284bffc84031y09m-EVVV.html?securityId=ivl9KA25BJliK-s1pAekjeZxNkmiaGdCePNhIzJE0n2uhoFRpWe3po6Dy57YSFQZtN186U2kYNJqZUcZkarU0pNmMkg2otJaIVyqzJlVEzB6ooLNYu3e5U8BM0zeO5Wv0es8soUapqyIWDqgx80__e_vWsY~&ka=company_more_job_b1bf0de284bffc84031y09m-EVVV\
+2025-12-29 18:11:17 | INFO     | selenium_crawler:_request:93 - 成功导航到: https://www.zhipin.com/job_detail/b1bf0de284bffc84031y09m-EVVV.html?securityId=ivl9KA25BJliK-s1pAekjeZxNkmiaGdCePNhIzJE0n2uhoFRpWe3po6Dy57YSFQZtN186U2kYNJqZUcZkarU0pNmMkg2otJaIVyqzJlVEzB6ooLNYu3e5U8BM0zeO5Wv0es8soUapqyIWDqgx80__e_vWsY~&ka=company_more_job_b1bf0de284bffc84031y09m-EVVV\
+2025-12-29 18:11:21 | INFO     | selenium_crawler:_request:110 - 元素 .job-primary 已加载
+2025-12-29 18:11:21 | INFO     | selenium_crawler:_request:117 - 额外等待 5 秒
+2025-12-29 18:11:26 | INFO     | selenium_crawler:_request:122 - 成功获取页面源码，长度: 400492 字符
+2025-12-29 18:11:26 | INFO     | recruitment_processor:_extract_with_rules:208 - 使用规则从boss提取了2个字段
+2025-12-29 18:11:35 | INFO     | recruitment_processor:process:84 - 成功处理招聘信息: Java高级开发工程师 - 某大型知名生活服务(O2O)公司
+字节跳动
+京东集团
+京东集团
+某知名互联网金融公司
+公司名称北京与爱为舞科技有限公司
+2025-12-29 18:11:35 | INFO     | main:main:195 - 成功处理1个招聘信息，正在保存结果...
+2025-12-29 18:11:35 | INFO     | output_formatter:format_and_save:65 - 数据已保存到: data/output\recruitment_info_20251229_181135_343.json
+2025-12-29 18:11:35 | SUCCESS  | main:main:197 - 爬取任务完成！
+2025-12-29 18:11:37 | INFO     | selenium_crawler:close:183 - Selenium WebDriver已关闭

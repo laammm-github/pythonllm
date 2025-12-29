@@ -32,9 +32,9 @@ llm:
 crawler:
   # 可选: selenium, playwright, requests
   driver: "selenium"
-  timeout: 30
-  retry_times: 3
-  retry_delay: 5
+  timeout: 60
+  retry_times: 5
+  retry_delay: 10
   # 浏览器配置（仅Selenium/Playwright使用）
   browser:
     headless: true
@@ -64,6 +64,17 @@ websites:
       salary: ".salary"
       location: ".job-address"
       requirements: ".job-requirement"
+  boss:
+    name: "Boss直聘"
+    base_url: "https://www.zhipin.com"
+    selectors:
+      job_list: ".job-list"
+      job_item: ".job-card-wrapper"
+      title: ".job-name"
+      company: ".company-name"
+      salary: ".salary"
+      location: ".job-area"
+      requirements: ".job-limit"
 
 # 输出配置
 output:

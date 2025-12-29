@@ -49,8 +49,9 @@ class RecruitmentProcessor(BaseProcessor):
             logger.info(f"处理{website}招聘信息: {url}")
             
             # 获取网页内容
-            # 为BOSS直聘添加特殊处理，等待页面完全加载
-            if website == "boss":
+            # 为不同爬虫类型添加适当的处理
+            if website == "boss" and hasattr(self.crawler, "fetch"):
+                # Boss直聘需要等待特定元素加载
                 page_content = self.crawler.fetch(url, wait_for_element=".job-primary", wait_seconds=5, **kwargs)
             else:
                 page_content = self.crawler.fetch(url, **kwargs)
